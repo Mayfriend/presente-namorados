@@ -173,6 +173,21 @@ button#noButton:hover {
 .button-container {
     display: flex;
     justify-content: center;
+    margin-top: 20px; /* Adicionando espaço entre os botões e outros elementos */
 }
 
-/* Estilos para os bot
+/* Estilos para os botões dentro do container */
+.button-container button {
+    margin: 0 10px; /* Espaço entre os botões */
+}
+
+/* Estilos para o textarea */
+textarea {
+    width: 100%; /* Define a largura máxima como 100% */
+    max-width: 300px; /* Define a largura máxima */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}

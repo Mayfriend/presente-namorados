@@ -1,3 +1,11 @@
+/* Reset de margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais para o body */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #6247AA; /* Cor de fundo roxa */
@@ -5,13 +13,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Alterado para min-height para garantir altura mínima em dispositivos com altura de tela menor */
 }
 
+/* Estilos para o container */
 .container {
     width: 90%;
     max-width: 430px;
-    margin: 0 auto;
+    margin: 20px;
     padding: 20px;
     border-radius: 10px;
     background-color: #957fef;
@@ -23,6 +32,7 @@ body {
     text-align: center; /* Centraliza todo o conteúdo dentro do container */
 }
 
+/* Estilos para a caixa de cabeçalho */
 .header-box {
     width: 100%;
     max-width: 299px;
@@ -35,6 +45,7 @@ body {
     margin-bottom: 20px;
 }
 
+/* Estilos para o texto do cabeçalho */
 .header-text {
     color: #6247aa;
     font-size: 12px;
@@ -42,6 +53,7 @@ body {
     text-align: center;
 }
 
+/* Estilos para o container das fotos */
 .photos-container {
     width: 100%;
     display: flex;
@@ -50,6 +62,7 @@ body {
     gap: 20px;
 }
 
+/* Estilos para o container de cada foto */
 .photo-container {
     width: 100%;
     max-width: 170px;
@@ -63,6 +76,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Estilos para a imagem da foto */
 .photo-img {
     max-width: 150px;
     height: auto;
@@ -71,22 +85,26 @@ body {
     object-fit: contain; /* Impede que a imagem estique */
 }
 
+/* Estilos para a descrição da foto */
 .photo-description {
     text-align: center;
     color: white;
 }
 
+/* Estilos para o título da foto */
 .photo-title {
     font-size: 12px;
     font-weight: 800;
     margin: 10px 0 5px;
 }
 
+/* Estilos para a legenda da foto */
 .photo-caption {
     font-size: 12px;
     font-weight: 500;
 }
 
+/* Estilos para o texto do rodapé */
 .footer-text {
     width: 100%;
     text-align: center;
@@ -96,6 +114,7 @@ body {
     margin-top: 20px;
 }
 
+/* Estilos para a caixa de música */
 .music-box {
     width: 100%;
     max-width: 340px;
@@ -108,6 +127,7 @@ body {
     margin-top: 20px;
 }
 
+/* Estilos para o texto da música */
 .music-text {
     text-align: center;
     color: #6247aa;
@@ -155,7 +175,4 @@ button#noButton:hover {
     justify-content: center;
 }
 
-/* Estilos para os botões dentro do container */
-.button-container button {
-    margin: 0 10px; /* Espaço entre os botões */
-}
+/* Estilos para os bot
